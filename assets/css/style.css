@@ -1,0 +1,612 @@
+@charset "UTF";
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&family=Open+Sans:wght@300;400;500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.voltar {
+  background-color: orange;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+body {
+  background-color: rgb(255, 162, 0);
+  margin: auto;
+  max-width: 1000px;
+  min-width: 360px;
+}
+
+/*BemVindo*/
+
+.mainbv {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.634) 0px 0px 15px 4px;
+}
+
+.mainbv .bemvindo {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.mainbv .bemvindo h1 {
+  color: rgb(255, 162, 0);
+  font-size: 60px;
+  padding: 5px;
+}
+
+.mainbv .bemvindo p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.mainbv .opcoes a button {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(255, 162, 0);
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.mainbv footer {
+  text-align: center;
+}
+
+.mainbv footer p {
+  font-size: 20px;
+}
+
+.mainbv footer a {
+  text-decoration: none;
+}
+
+.mainbv footer img {
+  width: 5%;
+  height: auto;
+  padding: 10px;
+}
+
+
+@media only screen and (max-width: 1366px) {
+  .mainbv .bemvindo {
+    padding: 10px;
+  }
+
+  .mainbv .bemvindo h1 {
+    font-size: 50px;
+  }
+
+  .mainbv .bemvindo p {
+    font-size: 30px;
+  }
+
+  .mainbv .opcoes a button {
+    margin: 7px;
+    padding: 7px;
+    font-size: 20px;
+  }
+
+  .mainbv img {
+    width: 17%;
+    height: auto;
+  }
+  
+  .mainbv footer p {
+    font-size: 15px;
+  }
+  
+  .mainbv footer img {
+    width: 5%;
+    padding: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .mainbv .bemvindo {
+    padding: 10px;
+  }
+
+  .mainbv .bemvindo h1 {
+    font-size: 45px;
+  }
+
+  .mainbv .bemvindo p {
+    font-size: 25px;
+  }
+
+  .mainbv .opcoes a button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .mainbv img {
+    width: 20%;
+    height: auto;
+  }
+  
+  .mainbv footer p {
+    font-size: 13px;
+  }
+  
+  .mainbv footer img {
+    width: 5%;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mainbv .bemvindo {
+    padding: 7px;
+  }
+
+  .mainbv .bemvindo h1 {
+    font-size: 40px;
+  }
+
+  .mainbv .bemvindo p {
+    font-size: 20px;
+  }
+
+  .mainbv .opcoes a button {
+    margin: 3px;
+    padding: 3px;
+    font-size: 13px;
+  }
+
+  .mainbv img {
+    width: 17%;
+    height: auto;
+  }
+  
+  .mainbv footer p {
+    font-size: 10px;
+  }
+  
+  .mainbv footer img {
+    width: 4%;
+    padding: 4px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mainbv .bemvindo {
+    padding: 5px;
+  }
+
+  .mainbv .bemvindo h1 {
+    font-size: 30px;
+  }
+
+  .mainbv .bemvindo p {
+    font-size: 15px;
+  }
+
+  .mainbv .opcoes a button {
+    margin: 3px;
+    padding: 3px;
+    font-size: 10px;
+  }
+
+  .mainbv img {
+    width: 15%;
+    height: auto;
+  }
+  
+  .mainbv footer p {
+    font-size: 10px;
+  }
+  
+  .mainbv footer img {
+    width: 3%;
+    padding: 4px;
+  }
+}
+
+/*------------------------------------*/
+
+
+
+
+
+
+
+
+/*Hamburgueres*/
+
+.mainham {
+  margin: auto;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.634) 0px 0px 15px 4px;
+}
+
+.mainham .hamburguer img {
+  width: 15%;
+  height: auto;
+}
+
+.mainham .hamburguer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mainham .hamburguer h1 {
+  color: rgb(255, 162, 0);
+}
+
+.mainham .listahambur {
+  columns: 2;
+  padding: 0px 50px;
+}
+
+.mainham .listahambur .coluna {
+  display: flex;
+  padding: 10px;
+  max-width: 900px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.mainham .listahambur .coluna .descricao {
+  width: 300px;
+  height: 70px;
+}
+
+.mainham .listahambur .coluna h3 {
+  color: rgb(255, 149, 0);
+  font-size: 16px;
+}
+
+.mainham .listahambur .coluna h4 {
+  font-size: 13px;
+}
+
+.coluna p {
+  background-color: orange;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10px 4px;
+  margin: 5px;
+}
+
+.molhos {
+  background-color: orange;
+  color: black;
+  display: flex;
+  padding: 12px;
+  margin: 10px 5px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+}
+
+.molhos p {
+  background-color: orange;
+  color: black;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 0px 15px;
+}
+
+.pao {
+  color: skyblue;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.mainham footer {
+  padding: 50px;
+  background-color: rgb(23, 23, 23);
+  text-align: center;
+  box-shadow: inset black 0px 0px 20px 20px;
+}
+
+.mainham footer p {
+  font-size: 20px;
+}
+
+.mainham footer img {
+  width: 5%;
+  height: auto;
+  padding: 10px;
+}
+
+.mainham footer a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 670px) {
+  .listahambur {
+    padding: 0px 40px;
+  }
+
+  .coluna {
+    padding: 5px;
+  }
+
+  .coluna .descricao {
+    width: 300px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+  .coluna h3 {
+    font-size: 15px;
+  }
+
+  .coluna h4 {
+    font-size: 12px;
+  }
+
+  .coluna p {
+    font-size: 16px;
+    padding: 8px 3px;
+    margin: 3px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .oi {
+    background-color: aliceblue;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .oi {
+    background-color: aliceblue;
+  }
+}
+
+/*--------------------------------------*/
+
+/*Porções*/
+
+.mainpor {
+  margin: auto;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.634) 0px 0px 15px 4px;
+}
+
+.mainpor .porcoes img {
+  width: 15%;
+  height: auto;
+}
+
+.porcoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.porcoes h2 {
+  font-size: 26px;
+}
+
+.listaPorcoes {
+  columns: 2;
+  padding: 0px 50px;
+}
+
+.coluna {
+  display: flex;
+  padding: 10px;
+  max-width: 900px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.coluna .descricao {
+  width: 300px;
+  height: 70px;
+  margin-right: 30px;
+}
+
+.coluna h3 {
+  color: rgb(255, 149, 0);
+  font-size: 18px;
+}
+
+.coluna h4 {
+  font-size: 14px;
+}
+
+.coluna p {
+  background-color: orange;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10px 4px;
+  margin: 5px;
+}
+
+.mainham footer {
+  padding: 50px;
+  background-color: rgb(23, 23, 23);
+  text-align: center;
+  box-shadow: inset black 0px 0px 20px 20px;
+}
+
+.mainham footer p {
+  font-size: 20px;
+}
+
+.mainham footer img {
+  width: 5%;
+  height: auto;
+  padding: 10px;
+}
+
+.mainham footer a {
+  text-decoration: none;
+}
+
+/*
+
+.mainpor {
+    padding: 10px 0px 0px 0px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.titulopor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulopor1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.listaPorcoes {
+    columns: 2;
+    padding: 0px 10px;
+}
+
+.adicionais {
+    display: flex;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.adicional1, .adicional2 {
+    width: 50%;
+    padding: 0px 5px;
+}
+
+.adicional {
+    display: flex;
+}
+
+.addnome {
+    color: rgb(255, 149, 0);
+    font-size: 10px;
+    width: 140px;
+}
+
+.addpreco {
+    font-size: 11px;
+}
+
+.detalhes {
+    width: 150px;
+}
+
+.horario {
+    padding-top: 10px;
+    color: rgb(255, 204, 0);
+    font-size: 12px;
+}
+
+.dias {
+    padding-top: 5px;
+    color: white;
+    font-size: 9px;
+}
+
+.contato {
+    text-align: center;
+}
+
+.whats {
+    width: 80px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: lime;
+    border-radius: 5px;
+}
+
+.numero {
+    font-size: 30px;
+}
+
+/*------------------------------*/
+
+/*Combos na Caixa*/
+
+.maincom {
+  padding: 10px 0px 0px 0px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.titulocom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colunacom {
+  display: flex;
+  padding: 0px 0px 3px 15px;
+}
+
+.nomecom {
+  padding-bottom: 5px;
+  color: rgb(255, 149, 0);
+  font-size: 10px;
+  width: 320px;
+}
+
+.lanchescom {
+  padding-bottom: 5px;
+  font-size: 9px;
+  max-width: 100px;
+}
+
+.descricaocom {
+  padding-bottom: 5px;
+  font-size: 8px;
+  max-width: 100px;
+}
+
+.precocom {
+  background-color: orange;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10px 2px;
+  margin: 5px;
+}
+
+.acompanha {
+  background-color: orange;
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  width: 150px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/*------------------------------*/
